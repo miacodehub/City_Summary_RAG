@@ -6,6 +6,9 @@ A RAG pipeline that generates a summary of a city based on user query.
 
 City Summary RAG is a Retrieval-Augmented Generation (RAG) pipeline designed for a collaborative travel planning application. Users can vote on destinations while receiving AI-generated summaries tailored to the type of trip they are looking for (for example, nightlife, food, photography or relaxation). The goal is to help groups make more informed travel decisions without leaving the application.
 
+<img width="1911" height="896" alt="image" src="https://github.com/user-attachments/assets/325a8e0f-f890-444f-82b8-f2ee1914b39d" />
+
+
 ## Problem Statement
 
 Existing travel platforms require users to browse multiple websites before understanding whether a destination matches their interests. Generic city descriptions also fail to adapt to different traveller preferences. The objective of this project is to generate concise, personalised summaries directly within the travel planning workflow.
@@ -52,7 +55,7 @@ The core entities for this project are simple : A city name, a user query, and a
 <img width="1442" height="817" alt="image" src="https://github.com/user-attachments/assets/52149008-ebe5-42d0-be02-90da8be95420" />
 
 
-## design Choices
+## Design Choices
 
 ### Chunking Strategy
 
@@ -87,7 +90,7 @@ The retrieved context, together with the user's travel preference, is incorporat
 - Adding cities poses an interesting challenge about how the summary generation aand retrieval will be handled.
 - Having the LLM generate summaries on the fly in production creates latency as the multi-step RAG process has several checks and is time consuming.
 - However, a solution could be to store the RAG generated summaries of a couple hundred cities in persistent storage or even an in-memory cache like Redis.
-- The above is an acceptable solution to scaling the product as the summaries, as can be seen, are only about 100 - 200 words. If they take around 100KB of space, then generating summaries for a million cities would need a 100GB. With odern storage solutions, this is a trivial need of space.
+- The above is an acceptable solution to scaling the product as the summaries, as can be seen, are only about 100 - 200 words. If they take around 50KB of space, then generating summaries for a million cities would need a 50GB. With modern storage solutions, this is a trivial need of space.
 
 
 
