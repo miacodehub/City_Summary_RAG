@@ -1,0 +1,13 @@
+{
+    "city": "Kyoto",
+    "documents": [
+        {
+            "section": "Overview",
+            "content": "Kyoto is..."
+        },
+        {
+            "section": "Food",
+            "content": "Kyoto is famous for..."
+        }
+    ]
+}
