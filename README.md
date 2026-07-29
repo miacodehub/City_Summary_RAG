@@ -27,7 +27,37 @@ A Retrieval Augmented Generation system works well in this use case because it c
 The core entities for this project are simple : A city name, a user query, and a RAG model.
 
 ## Architecture
-
+                   Travel Poll Application
+                           │
+                           ▼
+                User selects a city
+                + enters travel vibe
+                           │
+                           ▼
+                     FastAPI Backend
+                           │
+             ┌─────────────┴─────────────┐
+             ▼                           ▼
+     Generate Query Embedding      City Knowledge Base
+       (BAAI/bge-base-en-v1.5)     (Wikivoyage Documents)
+             │                           │
+             └─────────────┬─────────────┘
+                           ▼
+                  FAISS Vector Index
+                           │
+                  Top-3 Relevant Chunks
+                           │
+                           ▼
+                  Prompt Construction
+                           │
+                           ▼
+                 Ollama Local LLM
+                           │
+                           ▼
+            Personalised City Summary
+                           │
+                           ▼
+              Display in Travel Poll UI
 ## Implementation
 
   - **Data Ingestion:**
