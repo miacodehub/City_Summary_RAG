@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Poll</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="poll.css">
+</head>
+
+<body>
+
+    <!-- Falling Sakura -->
+    <div class="petals">
+        <span class="petal p1"></span>
+        <span class="petal p2"></span>
+        <span class="petal p3"></span>
+        <span class="petal p4"></span>
+        <span class="petal p5"></span>
+        <span class="petal p6"></span>
+        <span class="petal p7"></span>
+        <span class="petal p8"></span>
+        <span class="petal p9"></span>
+        <span class="petal p10"></span>
+        <span class="petal p11"></span>
+        <span class="petal p12"></span>
+    </div>
+
+    <div class="poll-card">
+
+    <div class="poll-header">
+
+        <button id="tripTitleBtn" class="trip-title-btn">
+            Click to add trip name
+        </button>
+
+    </div>
+
+    <div class="poll-meta">
+
+    <div class="field-group">
+        <label class="start-label">Starting From:</label>
+
+        <input
+            type="text"
+            id="startLocation"
+            class="start-location-input"
+        />
+    </div>
+
+    <div class="field-group vibe-group">
+        <label class="vibe-label">Vibe:</label>
+
+        <input
+            type="text"
+            id="vibe"
+            class="vibe-input"
+            placeholder="e.g. fun"
+        />
+    </div>
+
+    </div>
+
+    <div class="poll-body">
+
+        <button id="addLocationBtn" class="add-location-btn">
+            + Add Location
+        </button>
+
+        <div id="poll-options"></div>
+
+    </div>
+
+</div>
+<script src = "poll.js"></script>
+</body>
+</html>
+
+
+
+
