@@ -31,37 +31,9 @@ A Retrieval Augmented Generation system works well in this use case because it c
 - Ollama
 
 ## Architecture
-                   Travel Poll Application
-                           │
-                           ▼
-                User selects a city
-                + enters travel vibe
-                           │
-                           ▼
-                     FastAPI Backend
-                           │
-             ┌─────────────┴─────────────┐
-             ▼                           ▼
-     Generate Query Embedding      City Knowledge Base
-       (BAAI/bge-base-en-v1.5)     (Wikivoyage Documents)
-             │                           │
-             └─────────────┬─────────────┘
-                           ▼
-                  FAISS Vector Index
-                           │
-                  Top-3 Relevant Chunks
-                           │
-                           ▼
-                  Prompt Construction
-                           │
-                           ▼
-                 Ollama Local LLM
-                           │
-                           ▼
-            Personalised City Summary
-                           │
-                           ▼
-              Display in Travel Poll UI
+        
+        <img width="2769" height="1500" alt="arch" src="https://github.com/user-attachments/assets/740650fb-1322-452d-9143-edea842b66ab" />
+
 ## Project Repository Structure
 backend/
 
