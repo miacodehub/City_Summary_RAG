@@ -32,7 +32,8 @@ A Retrieval Augmented Generation system works well in this use case because it c
 
 ## Architecture
         
-<img width="2769" height="1500" alt="arch" src="https://github.com/user-attachments/assets/36c8af7b-9cdf-4050-8459-6b06cc375b83" />
+<img width="2795" height="1709" alt="arch" src="https://github.com/user-attachments/assets/bae675ac-bcc3-427f-b4e7-aefbb1b2699b" />
+
 
 
 ## Project Repository Structure
