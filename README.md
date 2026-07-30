@@ -22,9 +22,15 @@ The solution is to have RAG create a short summary of the city user selected. Th
 
 A Retrieval Augmented Generation system works well in this use case because it can provide summaries more accurate to what the user needs by creating embeddings of both the user query and the summary of a prticular city.
 
-## Entities
+## Technology Stack
 
-The core entities for this project are simple : A city name, a user query, and a RAG model.
+- Python
+- FastAPI
+- Sentence Transformers
+- FAISS
+- Ollama
+- LangChain (if used)
+- BeautifulSoup (if used)
 
 ## Architecture
                    Travel Poll Application
