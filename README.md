@@ -24,13 +24,11 @@ A Retrieval Augmented Generation system works well in this use case because it c
 
 ## Technology Stack
 
-- Python
-- FastAPI
+- Python/FastAPI
+- Javascript
 - Sentence Transformers
 - FAISS
 - Ollama
-- LangChain (if used)
-- BeautifulSoup (if used)
 
 ## Architecture
                    Travel Poll Application
@@ -64,6 +62,29 @@ A Retrieval Augmented Generation system works well in this use case because it c
                            │
                            ▼
               Display in Travel Poll UI
+## Project Repository Structure
+backend/
+
+├── app/
+
+│   ├── rag/
+
+│   ├── routes/
+
+│   ├── data/
+
+│   ├── indices/
+
+│   └── main.py
+
+frontend/
+
+├── poll.html
+
+├── poll.js
+
+└── poll.css
+
 ## Implementation
 
   - **Data Ingestion:**
